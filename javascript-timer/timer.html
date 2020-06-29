@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>It’s almost time…</h1>
+        <p id="timer"></p>
+    </body>
+    <style>
+		body {
+			padding-top: 20%;
+			height: 100vh;
+			background-image: linear-gradient(to bottom right, #CAA89C, #434EFC);
+		}
+		h1, p {
+			text-align: center;
+		    color: white;
+		}
+	</style>
+
+    <script>
+        
+        var timeLeft = +new Date("2021-05-04") - +new Date();
+		var daysLeft = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+		var hoursLeft = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+		var minutesLeft = Math.floor((timeLeft / 1000) / 60 % 60);
+		const timeLeftText = `${daysLeft} days ${hoursLeft} hours ${minutesLeft} minutes.`;
+		
+		document.getElementById("timer").textContent = timeLeftText;
+
+    </script>
+</html>
+
