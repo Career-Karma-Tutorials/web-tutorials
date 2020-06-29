@@ -1,0 +1,18 @@
+.mainBox {
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	background: hotpink;
+	padding: 5%;
+}
+
+body {
+	background: lightblue;
+}
+
+button {
+	padding: 10px;
+	background: lightgreen;
+	border-radius: 10px;
+	border: none;
+}
